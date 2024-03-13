@@ -1,0 +1,72 @@
+{
+    "accounts": [
+        {
+            "description": "Cuentas contables",
+            "items": [
+                {
+                    "code": "1",
+                    "type": "Haber",
+                    "subItems": {
+                        "code": "1.1",
+                        "subItems": null,
+                        "isActive": true,
+                        "description": "Description of transaction",
+                        "isDeleted": false
+                    },
+                    "isActive": false,
+                    "description": "Description of transaction",
+                    "isDeleted": true
+                },
+                {
+                    "code": "2",
+                    "type": "Debe",
+                    "subItems": [
+                        {
+                            "code": "2.1",
+                            "subItems": [
+                                {
+                                    "code": "2.1.1",
+                                    "subItems": [
+                                        {
+                                            "code": "2.1.1.1",
+                                            "subItems": null,
+                                            "isActive": true,
+                                            "description": "Description of transaction",
+                                            "isDeleted": false
+                                        }
+                                    ],
+                                    "isActive": false,
+                                    "description": "Description of transaction",
+                                    "isDeleted": false
+                                }
+                            ],
+                            "isActive": true,
+                            "description": "Description of transaction",
+                            "isDeleted": false
+                        }
+                    ],
+                    "isActive": false,
+                    "description": "Description of transaction",
+                    "isDeleted": false
+                },
+                {
+                    "code": "3",
+                    "type": "patrimonios",
+                    "subItems": null,
+                    "isActive": true,
+                    "description": "Description of transaction",
+                    "isDeleted": false
+                },
+                {
+                    "code": "4",
+                    "type": "pasivos",
+                    "subItems": null,
+                    "isActive": true,
+                    "description": "Description of transaction",
+                    "isDeleted": false
+                }
+
+            ]
+        }
+    ]
+}
