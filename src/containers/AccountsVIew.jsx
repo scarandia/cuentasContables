@@ -1,0 +1,1 @@
+//components altogether to show page

@@ -14,7 +14,7 @@
                         "isDeleted": false
                     },
                     "isActive": false,
-                    "description": "Description of transaction",
+                    "description": "Description of Haber transaction",
                     "isDeleted": true
                 },
                 {
@@ -46,26 +46,33 @@
                         }
                     ],
                     "isActive": false,
-                    "description": "Description of transaction",
+                    "description": "Description of Debe transaction",
                     "isDeleted": false
                 },
                 {
                     "code": "3",
-                    "type": "patrimonios",
+                    "type": "Patrimonio",
                     "subItems": null,
                     "isActive": true,
-                    "description": "Description of transaction",
+                    "description": "Description of Patrimonio",
                     "isDeleted": false
                 },
                 {
                     "code": "4",
-                    "type": "pasivos",
+                    "type": "Pasivos",
                     "subItems": null,
                     "isActive": true,
-                    "description": "Description of transaction",
+                    "description": "Description of Pasivos",
                     "isDeleted": false
+                },
+                {
+                    "code": 0,
+                    "type": "None",
+                    "subItems": null,
+                    "isActive": null,
+                    "description": "Not filtering any items",
+                    "isDeleted": null
                 }
-
             ]
         }
     ]
