@@ -25,7 +25,8 @@ export default function App() {
   };
 
   return (
-    <>{/* only <accounts view> as a function*/}
+    <>
+      {/* only <accounts view> as a function*/}
       {/* Account Form Component */}
       <form className="new-item-form">
         <div className="form-row">
