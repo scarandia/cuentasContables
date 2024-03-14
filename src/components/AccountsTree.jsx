@@ -1,18 +1,18 @@
-import "./styles/styles.css";
-import expectedDB from "./expectedDB.json";
-  
-  {/* Accounts Tree Component */}
+import "../styles/styles.css";
+import expectedDB from "../expectedDB.json";
+
+function AccountsTreeView() {
+  {/* Accounts Tree Component */ }
   <h3 className="header">Accounts Tree </h3>
-  {/* Filter form */}
+  {/* Filter form */ }
   <form>
     <div className="form-row">
       <label htmlFor="filterType">Filter</label>
-      <select
+      <select>
         name="type"
         id="filterType"
         value={filterType}
         onChange={handleFilterChange}
-      >
         <option value="None">None</option>
         <option value="Haber">Haber</option>
         <option value="Debe">Debe</option>
@@ -21,3 +21,7 @@ import expectedDB from "./expectedDB.json";
       </select>
     </div>
   </form>
+}
+export {
+  AccountsTreeView
+}
