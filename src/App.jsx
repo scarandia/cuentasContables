@@ -3,7 +3,7 @@ import "./styles/styles.css";
 import expectedDB from "./expectedDB.json";
 import { AccountsTreeView } from "./components/AccountsTree";
 import { AccountForm } from "./components/AccountsForm";
-import { filterAccounts, FilteredItemsDisplay } from "./components/AccountsFilters"; 
+import { filterAccounts, FilteredItemsDisplay } from "./components/AccountsFilters";
 
 // Adjusted import to include FilteredItemsDisplay
 
@@ -54,6 +54,7 @@ export default function App() {
           <select
             name="type"
             id="filterType"
+            class="filterType"
             value={filterType}
             onChange={handleFilterChange}
           >
