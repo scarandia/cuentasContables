@@ -73,6 +73,17 @@
     margin-bottom: 0.5rem;
   }
   
+  .new-item-form accountsTree {
+    outline: none;
+    border: 1px solid hsl(200, 100%, 40%);
+    background: hsl(200, 100%, 30%);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    color: hsl(0, 0%, 100%);
+    font-weight:bold;
+    margin-bottom: 0.5rem;
+  }
+
   .new-item-form input:focus {
     border: 1px solid hsl(200, 100%, 70%);
   }
