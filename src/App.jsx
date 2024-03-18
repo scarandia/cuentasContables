@@ -4,7 +4,7 @@ import expectedDB from "./expectedDB.json";
 import { FormComponent } from "./components/NewAccountsForm";
 import { AccountsTree } from "./components/AccountsTree";
 import { FilterForm } from "./components/FilterForm";
-//import { filterAccounts, filterForm, displayFilteredItems } from "./components/AccountsFilters";
+import { DisplayFilteredItems } from "./components/DisplayFilteredItems";
 
 
 export default function App() {
@@ -32,22 +32,12 @@ export default function App() {
       {/* Accounts Tree Component */}
       <AccountsTree />
 
-
       {/* Filter form */}
-      <FilterForm onChange={(filterType) => {console.log(filterType)}}/>
+      <FilterForm onChange={(filterType) => { console.log(filterType) }} />
 
       {/* Display filtered items */}
-      <div className="accountsTree">
-        <h3>Filtered Items (Type: {filterType})</h3>
-        <ul> {/* will be Account List*/}
-          {filteredItems.map((item, index) => (
-            <li key={index}> {/*  will be  Account List items*/}
-              <strong>Code: {item.code}</strong>
-              <p>Description: {item.description}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
+
+      {/*<DisplayFilteredItems />*/}
     </>
   );
 }

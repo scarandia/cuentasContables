@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function FormComponent() {
+export const FormComponent= () => {
   return (
     
   //Account Form Component
@@ -30,6 +30,3 @@ export default function FormComponent() {
 }
 
 
-export {
-  FormComponent
-}
