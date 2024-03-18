@@ -1,7 +1,10 @@
 import React from "react";
 
-export function AccountForm() {
+
+export default function FormComponent() {
   return (
+    
+  //Account Form Component
     <form className="new-item-form">
       <div className="form-row">
         <h3 className="header">New Transaction Information</h3>
@@ -24,4 +27,9 @@ export function AccountForm() {
       <button className="btn">Add</button>
     </form>
   );
+}
+
+
+export {
+  FormComponent
 }
