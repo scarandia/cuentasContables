@@ -3,8 +3,9 @@ import "./styles/styles.css";
 import expectedDB from "./expectedDB.json";
 import { FormComponent } from "./components/NewAccountsForm";
 import { AccountsTree } from "./components/AccountsTree";
-import { FilterForm } from "./components/FilterForm";
+import { FilterForm } from "./components/AccountsFilter";
 import { DisplayFilteredItems } from "./components/DisplayFilteredItems";
+import { DisplayNestedItems } from './components/DisplayNestedItems';
 
 
 export default function App() {
@@ -13,11 +14,7 @@ export default function App() {
 
   // Filtered items based on the selected filter type
   const filteredItems = expectedDB.accounts[0].items.filter(
-    (item) => {
-      console.log('Filtering item:', item);
-      console.log('Filter Type:', filterType);
-      return item.type === filterType;
-    }
+    (item) => item.type === filterType
   );
 
   // Function to handle filter type change
@@ -33,11 +30,17 @@ export default function App() {
       <AccountsTree />
 
       {/* Filter form */}
-      <FilterForm onChange={(filterType) => { console.log(filterType) }} />
+      <FilterForm onChange={setFilterType} />
 
       {/* Display filtered items */}
+      <DisplayFilteredItems filterType={filterType} filteredItems={filteredItems} />
 
-      {/*<DisplayFilteredItems />*/}
+      
+      <div>
+        <h1>Nested JSON Items</h1>
+        <DisplayNestedItems items={expectedDB.accounts[0].items} />
+      </div>
+     
     </>
   );
 }

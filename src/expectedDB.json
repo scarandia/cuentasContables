@@ -31,17 +31,17 @@
                                             "code": "2.1.1.1",
                                             "subItems": null,
                                             "isActive": true,
-                                            "description": "Description of transaction",
+                                            "description": "Description of 2.1.1.1 Transaction",
                                             "isDeleted": false
                                         }
                                     ],
                                     "isActive": false,
-                                    "description": "Description of transaction",
+                                    "description": "Description of 2.1.1 Transaction",
                                     "isDeleted": false
                                 }
                             ],
                             "isActive": true,
-                            "description": "Description of transaction",
+                            "description": "Description of 2.1 Transaction",
                             "isDeleted": false
                         }
                     ],
